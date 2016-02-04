@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+ <Button android:id="@+id/start" style="?android:attr/buttonStyleSmall"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+  android:text="@string/start" />
+ 
+ <Button android:id="@+id/stop" style="?android:attr/buttonStyleSmall"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:layout_alignParentTop="true" android:layout_toRightOf="@id/start"
+  android:text="@string/stop" />
+ 
+ <ProgressBar android:id="@+id/progressBar1"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:layout_alignParentTop="true" android:layout_toRightOf="@+id/stop" />
+ 
+ <Button android:id="@+id/download" style="?android:attr/buttonStyleSmall"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:layout_alignParentLeft="true" android:layout_below="@+id/start"
+  android:text="@string/start_download" />
+ 
+ <ProgressBar android:id="@+id/progressBar2"
+  style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+  android:layout_below="@id/download" android:padding="5dp" />
+ 
+ <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+  android:layout_below="@+id/progressBar2" android:contentDescription="@string/my_file" />
+ 
+ <TextView android:id="@+id/textView1" android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:layout_alignBottom="@+id/download"
+  android:layout_toRightOf="@+id/download" android:text="@string/finished"
+  android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    
+</RelativeLayout>
